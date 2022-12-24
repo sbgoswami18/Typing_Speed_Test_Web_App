@@ -1,0 +1,124 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.mainDiv {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background-color: chartreuse;
+}
+
+.centerDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h1 {
+    text-transform: capitalize;
+    color: white;
+    text-shadow: .5rem .3rem .3rem blue;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+}
+
+h2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+textarea {
+    background-color: rgb(158, 248, 248);
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 1rem 1rem;
+    border: 2rem solid rgb(240, 87, 87);
+    color: black;
+    font-size: 3rem;
+    outline: none;
+}
+
+.mainBtn {
+    padding: 1.5rem 5rem;
+    border-radius: 5rem;
+    border: .5rem solid black;
+    background-color: orange;
+    font-size: 3rem;
+    margin-top: 2rem;
+}
+
+.mainBtn:hover {
+    cursor: pointer;
+    background-color: pink;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.center {
+    height: 10vh;
+    background-color: black;
+    color: white;
+    /* padding: .9rem 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/* ******************** Responsive ************************** */
+
+/* @media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+} */
+
+@media(max-width:1264px) {
+    html {
+        font-size: 25%;
+    }
+
+    .centerDiv {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4.3rem;
+    }
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    textarea {
+        width: 100%;
+        font-size: 5rem;
+        font-weight: 900;
+    }
+
+    .mainBtn {
+        font-size: 5rem;
+        font-weight: 900;
+    }
+
+    .center {
+        font-size: 3.1rem;
+        font-weight: 900;
+    }
+
+}
